@@ -1,0 +1,17 @@
+{
+ "anim.js":
+   { "content-length": 450,
+     "content-md5": "1efb854798b82eba0a70b143564cd3fa" },
+  "drawing.png":
+   { "content-length": 13838,
+     "content-md5": "e77370bef7ac7607902b6fe4a93ea6d6" },
+  "jquery.js":
+   { "content-length": 95935,
+     "content-md5": "9aecea3830b65ecad103ee84bd5fe294" },
+  "style.css":
+   { "content-length": 726,
+     "content-md5": "ac125ff3aa102fae37a432c8e4a07c59" },
+  "test.html":
+   { "content-length": 282,
+     "content-md5": "99592ddbda8174399c5c3e1a52f1d186" }
+}

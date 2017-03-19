@@ -1,0 +1,35 @@
+{
+  "name": "phar-fs",
+  "version": "1.0.0",
+  "description": "phar-stream mapper for fs",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:131/phar-fs.git"
+  },
+  "keywords": [
+    "phar-stream",
+    "fs"
+  ],
+  "author": "Francois Leurent <131.js@cloudyks.org>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/131/phar-fs/issues"
+  },
+  "homepage": "https://github.com/131/phar-fs",
+  "dependencies": {
+    "debug": "^2.3.2",
+    "nyks": "^3.17.1",
+    "phar-stream": "^1.0.1"
+  },
+  "scripts": {
+    "mocha": "node node_modules/mocha/bin/_mocha",
+    "test": "node node_modules/istanbul/lib/cli.js cover --report text-summary --report html --report lcov  node_modules/mocha/bin/_mocha --",
+    "coveralls": "npm install coveralls && node ./node_modules/coveralls/bin/coveralls.js < ./coverage/lcov.info"
+  },
+  "devDependencies": {
+    "expect.js": "^0.3.1",
+    "istanbul": "~0.3.18",
+    "mocha": "^2.2.5"
+  }
+}
