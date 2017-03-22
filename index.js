@@ -32,7 +32,7 @@ class extractor {
     var index = {};
 
     var defered = defer();
-    extract.on('entry', function(header, stream, next) {
+    extract.on('entry', (header, stream, next) => {
       var hash    = crypto.createHash('md5');
       hash.setEncoding('hex');
       var length = 0;
@@ -47,7 +47,7 @@ class extractor {
       stream.pipe(hash);
       stream.pipe(target);
 
-      target.on('finish', function() {
+      target.on('end', () => {
         hash.end();
         index[header.entry_name]= {
           'content-length' : filesize(entry_path),
@@ -55,6 +55,7 @@ class extractor {
         };
         next();
       })
+
     });
 
     extract.on('finish', defered.resolve.bind(defered, index));
