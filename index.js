@@ -47,7 +47,7 @@ class extractor {
       stream.pipe(hash);
       stream.pipe(target);
 
-      target.on('end', () => {
+      target.on('finish', () => {
         hash.end();
         index[header.entry_name]= {
           'content-length' : filesize(entry_path),
