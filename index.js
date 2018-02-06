@@ -23,7 +23,6 @@ class extractor {
         file_path  = args.shift(),
         target_dir = args.pop() || './out';
 
-    rmrf(target_dir);
 
     debug("Extract phar %s in %s", file_path , target_dir);
 
