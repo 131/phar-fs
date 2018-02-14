@@ -7,7 +7,6 @@ const path   = require('path');
 const phar  = require('phar-stream');
 
 const isDir      = require('nyks/fs/isDirectorySync');
-const rmrf       = require('nyks/fs/deleteFolderRecursive');
 const filesize   = require('nyks/fs/filesizeSync');
 const mkdirpSync = require('nyks/fs/mkdirpSync');
 const debug      = require('debug')('phar');
@@ -16,7 +15,7 @@ const defer      = require('nyks/promise/defer');
 class extractor {
 
 
-  static extract(file_path) /**
+  static extract(file_path, target_dir) /**
   * @param string [target_dir=./out]
   */ {
     var args  = [].slice.apply(arguments), 
