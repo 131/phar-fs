@@ -46,17 +46,20 @@ class extractor {
       stream.pipe(target);
 
       target.on('finish', () => {
+
         hash.end();
         index[header.entry_name]= {
           'content-length' : filesize(entry_path),
           'content-md5'    : hash.read()
         };
+
         next();
       })
 
     });
 
-    extract.on('finish', defered.resolve.bind(defered, index));
+    //finish do NOT wait for the final hash
+    extract.on('extracted', defered.resolve.bind(defered, index));
     extract.on('error', defered.reject); 
 
     var archive = fs.createReadStream( String(file_path));

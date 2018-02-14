@@ -20,7 +20,7 @@
   "dependencies": {
     "debug": "^2.3.2",
     "nyks": "^3.17.1",
-    "phar-stream": "^1.0.1"
+    "phar-stream": "^2.0.2"
   },
   "scripts": {
     "mocha": "node node_modules/mocha/bin/_mocha",
