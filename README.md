@@ -7,6 +7,7 @@ It's mosly intended to be used via [cnyks](https://github.com/131/cnyks)
 [![Coverage Status](https://coveralls.io/repos/github/131/phar-fs/badge.svg?branch=master)](https://coveralls.io/github/131/phar-fs?branch=master)
 [![Version](https://img.shields.io/npm/v/phar-fs.svg)](https://www.npmjs.com/package/phar-fs)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](http://opensource.org/licenses/MIT)
+[![Code style](https://img.shields.io/badge/code%2fstyle-ivs-green.svg)](https://www.npmjs.com/package/eslint-plugin-ivs)
 
 
 
