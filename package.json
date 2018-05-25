@@ -1,6 +1,6 @@
 {
   "name": "phar-fs",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "phar-stream mapper for fs",
   "main": "index.js",
   "repository": {
@@ -24,7 +24,6 @@
   "peerDependencies": {
     "debug": ">= 2.3.2 < 4"
   },
-
   "scripts": {
     "mocha": "node node_modules/mocha/bin/_mocha",
     "test": "node node_modules/istanbul/lib/cli.js cover --report text-summary --report html --report lcov  node_modules/mocha/bin/_mocha --",
